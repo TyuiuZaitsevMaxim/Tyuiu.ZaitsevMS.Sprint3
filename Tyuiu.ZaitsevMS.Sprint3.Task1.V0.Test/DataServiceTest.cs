@@ -4,7 +4,7 @@ using Tyuiu.ZaitsevMS.Sprint3.Task1.V5.Lib;
 
 namespace Tyuiu.ZaitsevMS.Sprint3.Task1.V5.Test
 {
-    [TestClass]
+    [TestClass] 
     public class DataServiceTest
     {
         [TestMethod]
