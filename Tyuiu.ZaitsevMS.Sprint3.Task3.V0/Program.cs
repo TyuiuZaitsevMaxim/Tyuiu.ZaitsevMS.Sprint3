@@ -9,7 +9,7 @@ namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V21
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             DataService ds = new DataService();
 
