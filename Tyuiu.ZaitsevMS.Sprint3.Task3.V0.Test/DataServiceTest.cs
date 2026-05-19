@@ -1,23 +1,23 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint3.Task3.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint3.Task3.V21.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V21.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetCharCount()
+        public void ValidReplaceNumOnChar()
         {
             DataService ds = new DataService();
 
-            string str = "abcdef abcdef abcdef abcdefabcdefabcdef";
-            char chr = 'a';
+            string str = "f3g5ht g4j 34kg4";
+            char item = 'e';
 
-            double res = ds.GetCharCount(str, chr);
+            string res = ds.ReplaceNumOnChar(str, item);
 
-            int wait = 6;
+            string wait = "fegeht gej eekge";
 
             Assert.AreEqual(wait, res);
         }

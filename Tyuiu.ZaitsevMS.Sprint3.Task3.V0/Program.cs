@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint3.Task3.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint3.Task3.V21.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V0
+namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V21
 {
     internal class Program
     {
@@ -19,25 +19,28 @@ namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V0
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла foreach                                            *");
             Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #21                                                             *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу которая считает количество определенных символов в   *");
-            Console.WriteLine("* строке                                                                  *");
+            Console.WriteLine("* Используя цикл foreach заменить цифры на букву e в строке:             *");
+            Console.WriteLine("* f3g5ht g4j 34kg4                                                        *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            string value = "abcd abcd abcd abcd abcd abcd abcd";
-            char chr = 'a';
+            string value = "f3g5ht g4j 34kg4";
+            char item = 'e';
+
+            Console.WriteLine("Исходная строка: " + value);
+            Console.WriteLine("Символ замены: " + item);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Количество символов " + chr + " = " + ds.GetCharCount(value, chr));
+            Console.WriteLine("Результат: " + ds.ReplaceNumOnChar(value, item));
             Console.ReadLine();
         }
     }

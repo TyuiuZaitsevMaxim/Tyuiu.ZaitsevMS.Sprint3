@@ -5,19 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task1.V0.Lib
+namespace Tyuiu.ZaitsevMS.Sprint3.Task1.V5.Lib
 {
-    public class DataService : ISprint3Task1V0
+    public class DataService : ISprint3Task1V5
     {
-        public double GetMultiplySeries(double value, int startValue, int stopValue)
+        public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double multSeries = 1;
-            while (startValue <= stopValue)
+            double result = 1;
+            int k = startValue;
+            while (k <= stopValue)
             {
-                multSeries = multSeries * ((1 / Math.Sin(startValue)) + value);
-                startValue++;
+                result = result * (Math.Cos(0.1) + Math.Pow(k, -2));
+                k++;
             }
-            return Math.Round(multSeries, 3);
+            return Math.Round(result, 3);
         }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint3.Task7.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint3.Task7.V20.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task7.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint3.Task7.V20.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -17,24 +17,22 @@ namespace Tyuiu.ZaitsevMS.Sprint3.Task7.V0.Test
 
             int len = stopValue - startValue + 1;
 
-            double[] valueWaitArray;
-            valueWaitArray = new double[len];
+            double[] valueWaitArray = new double[len];
 
-            valueWaitArray[0] = 0.96;
-            valueWaitArray[1] = 0.76;
-            valueWaitArray[2] = -0.14;
-            valueWaitArray[3] = -0.91;
-            valueWaitArray[4] = -0.84;
-            valueWaitArray[5] = 0.00;
-            valueWaitArray[6] = 0.84;
-            valueWaitArray[7] = 0.91;
-            valueWaitArray[8] = 0.14;
-            valueWaitArray[9] = -0.76;
-            valueWaitArray[10] = -0.96;
+            valueWaitArray[0] = 17.27;
+            valueWaitArray[1] = 14.08;
+            valueWaitArray[2] = 10.27;
+            valueWaitArray[3] = 6.65;
+            valueWaitArray[4] = 3.87;
+            valueWaitArray[5] = 2.00;
+            valueWaitArray[6] = -0.74;
+            valueWaitArray[7] = -3.71;
+            valueWaitArray[8] = -7.59;
+            valueWaitArray[9] = -11.55;
+            valueWaitArray[10] = -14.74;
 
-            double[] res;
-            res = new double[len];
-            res = ds.GetMassFunction(startValue, stopValue);
+            double[] res = ds.GetMassFunction(startValue, stopValue);
+
             CollectionAssert.AreEqual(valueWaitArray, res);
         }
     }

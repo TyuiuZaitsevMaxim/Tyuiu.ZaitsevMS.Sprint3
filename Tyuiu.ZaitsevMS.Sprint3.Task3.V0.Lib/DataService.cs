@@ -6,21 +6,25 @@ using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V0.Lib
+namespace Tyuiu.ZaitsevMS.Sprint3.Task3.V21.Lib
 {
-    public class DataService : ISprint3Task3V0
+    public class DataService : ISprint3Task3V21
     {
-        public int GetCharCount(string value, char item)
+        public string ReplaceNumOnChar(string value, char item)
         {
-            int count = 0;
+            string result = "";
             foreach (char chr in value)
             {
-                if (chr == item)
+                if (char.IsDigit(chr))
                 {
-                    count++;
+                    result += item;
+                }
+                else
+                {
+                    result += chr;
                 }
             }
-            return count;
+            return result;
         }
     }
 }

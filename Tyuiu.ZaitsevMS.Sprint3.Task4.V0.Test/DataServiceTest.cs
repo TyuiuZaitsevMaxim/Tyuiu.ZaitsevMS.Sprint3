@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint3.Task4.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint3.Task4.V29.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task4.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint3.Task4.V29.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -17,7 +17,7 @@ namespace Tyuiu.ZaitsevMS.Sprint3.Task4.V0.Test
 
             double res = ds.Calculate(startValue, stopValue);
 
-            double wait = 0.104;
+            double wait = 0;
             Assert.AreEqual(wait, res);
         }
     }

@@ -1,26 +1,32 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint3.Task0.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint3.Task0.V30.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task0.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint3.Task0.V30.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestGetMultiplySeries()
         {
             DataService ds = new DataService();
 
-            double value = 5;
             int startValue = 1;
-            int stopValue = 10;
+            int stopValue = 20;
 
-            double res = ds.GetSumSeries(value, startValue, stopValue);
+            double res = ds.GetMultiplySeries(startValue, stopValue);
 
-            double wait = 56.552;
+            // Вычисленное эталонное значение
+            double expected = 0;
+            double p = 1;
+            for (int k = 1; k <= 20; k++)
+            {
+                p *= Math.Pow(k / Math.Sin(1), -10);
+            }
+            expected = Math.Round(p, 3);
 
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(expected, res);
         }
     }
 }

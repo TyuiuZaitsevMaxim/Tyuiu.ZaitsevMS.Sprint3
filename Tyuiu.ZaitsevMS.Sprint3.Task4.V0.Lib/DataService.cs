@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task4.V0.Lib
+namespace Tyuiu.ZaitsevMS.Sprint3.Task4.V29.Lib
 {
-    public class DataService : ISprint3Task4V0
+    public class DataService : ISprint3Task4V29
     {
         public double Calculate(int startValue, int stopValue)
         {
@@ -16,7 +16,7 @@ namespace Tyuiu.ZaitsevMS.Sprint3.Task4.V0.Lib
             {
                 if (x == 0)
                 {
-                    break;
+                    continue;
                 }
                 else
                 {

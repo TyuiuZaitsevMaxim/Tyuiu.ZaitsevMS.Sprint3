@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint3.Task0.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint3.Task0.V30.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint3.Task0.V0
+namespace Tyuiu.ZaitsevMS.Sprint3.Task0.V30
 {
     internal class Program
     {
@@ -19,30 +19,28 @@ namespace Tyuiu.ZaitsevMS.Sprint3.Task0.V0
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла for                                                *");
             Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #30                                                             *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл for, которая вычисляет сумму ряда по  *");
-            Console.WriteLine("* формуле, при x = 5                                                      *");
+            Console.WriteLine("* Написать программу используя цикл for, которая вычисляет произведение   *");
+            Console.WriteLine("* ряда по формуле: p = product_{k=1}^{20} (k / sin(1))^{-10}             *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double value = 5;
             int startValue = 1;
-            int stopValue = 10;
+            int stopValue = 20;
 
-            Console.WriteLine("Переменная X = " + value);
             Console.WriteLine("Старт шага = " + startValue);
-            Console.WriteLine("Конец шага = "+ stopValue);
+            Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
+            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(startValue, stopValue));
             Console.ReadLine();
         }
     }
