@@ -7,7 +7,7 @@ using Tyuiu.ZaitsevMS.Sprint3.Task4.V29.Lib;
 
 namespace Tyuiu.ZaitsevMS.Sprint3.Task4.V29
 {
-    internal class Program
+    internal class Program 
     {
         static void Main(string[] args)
         {
