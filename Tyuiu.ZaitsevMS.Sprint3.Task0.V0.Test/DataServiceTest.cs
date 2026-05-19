@@ -3,7 +3,7 @@ using System;
 using Tyuiu.ZaitsevMS.Sprint3.Task0.V30.Lib;
 
 namespace Tyuiu.ZaitsevMS.Sprint3.Task0.V30.Test
-{
+{ 
     [TestClass]
     public class DataServiceTest
     {
