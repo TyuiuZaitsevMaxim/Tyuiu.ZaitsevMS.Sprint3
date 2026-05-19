@@ -10,7 +10,7 @@ namespace Tyuiu.ZaitsevMS.Sprint3.Task5.V24
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { 
             DataService ds = new DataService();
 
             Console.Title = "Спринт #3 | Выполнил: Зайцев М. С. | ИБКСб-25-1";

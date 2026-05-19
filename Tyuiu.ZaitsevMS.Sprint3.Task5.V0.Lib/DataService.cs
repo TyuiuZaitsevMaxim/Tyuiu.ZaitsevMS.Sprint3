@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using tyuiu.cources.programming.interfaces.Sprint3;
+using tyuiu.cources.programming.interfaces.Sprint3; 
 
 namespace Tyuiu.ZaitsevMS.Sprint3.Task5.V24.Lib
 {
